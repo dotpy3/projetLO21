@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gestionprojets</class>
+ <widget class="QMainWindow" name="gestionprojets">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>251</width>
+      <height>561</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>280</y>
+      <width>551</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>448</x>
+      <y>15</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>NOM UV</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>90</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>80</y>
+      <width>115</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>130</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Date de disponibilité</string>
+    </property>
+   </widget>
+   <widget class="QDateTimeEdit" name="dateTimeEdit">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>130</y>
+      <width>194</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_2">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>170</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Date d'échéance</string>
+    </property>
+   </widget>
+   <widget class="QDateTimeEdit" name="dateTimeEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>170</y>
+      <width>194</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionImporter"/>
+    <addaction name="separator"/>
+    <addaction name="actionExporter_le_projet"/>
+    <addaction name="actionExporter_tous_les_projets"/>
+   </widget>
+   <widget class="QMenu" name="menuProjets">
+    <property name="title">
+     <string>Projets</string>
+    </property>
+    <addaction name="actionAjouter_un_projet"/>
+    <addaction name="actionSupprimer_le_projet"/>
+   </widget>
+   <widget class="QMenu" name="menuT_ches">
+    <property name="title">
+     <string>Tâches</string>
+    </property>
+    <widget class="QMenu" name="menuAjouter_une_tache">
+     <property name="title">
+      <string>Ajouter une tache</string>
+     </property>
+     <addaction name="actionAjouter_une_tache_unitaire"/>
+     <addaction name="actionAjouter_une_tache_composite"/>
+    </widget>
+    <addaction name="menuAjouter_une_tache"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuProjets"/>
+   <addaction name="menuT_ches"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionImporter">
+   <property name="text">
+    <string>Importer</string>
+   </property>
+  </action>
+  <action name="actionExporter_le_projet">
+   <property name="text">
+    <string>Exporter le projet</string>
+   </property>
+  </action>
+  <action name="actionExporter_tous_les_projets">
+   <property name="text">
+    <string>Exporter tous les projets</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_projet">
+   <property name="text">
+    <string>Ajouter un projet</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_le_projet">
+   <property name="text">
+    <string>Supprimer le projet</string>
+   </property>
+  </action>
+  <action name="actionAjouter_une_tache_unitaire">
+   <property name="text">
+    <string>Ajouter une tache unitaire</string>
+   </property>
+  </action>
+  <action name="actionAjouter_une_tache_composite">
+   <property name="text">
+    <string>Ajouter une tache composite</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
